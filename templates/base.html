@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bet dev</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- In-lining styles to avoid needing a separate .css file -->
+    <!--<style>-->
+        <!--hr { border-color: #cccccc; margin: 0; }-->
+        <!--.no-margins { margin: 0px; }-->
+        <!--.with-margins { margin: 10px; }-->
+        <!--.col-centered { float: none; margin: 0 auto; }-->
+        <!--.custom {width: 150px;}-->
+        <!--.drop {width :250px; text-align:center; }-->
+        <!--select { width: 400px; text-align-last:center; }-->
+        <!--.lt {text-align-last:center; }-->
+        <!--/*input {-->
+              <!--border: #000;-->
+              <!--padding: 10px;-->
+              <!--font-size: 1.2em;-->
+              <!--width: 100%;-->
+            <!--}-->
+            <!--input::placeholder {-->
+              <!--color: red;-->
+            <!--}*/-->
+        <!--html, body {-->
+            <!--max-width: 100%;-->
+            <!--overflow-x: hidden;-->
+        <!--}-->
+        <!--.Div3-->
+        <!--{-->
+            <!--width:98.5%; background-color: white;-->
+            <!--position: fixed;-->
+            <!--overflow: hidden;-->
+        <!--}-->
+        <!--#table-wrapper {-->
+          <!--position:relative;-->
+        <!--}-->
+        <!--#table-scroll {-->
+          <!--height:250px;-->
+          <!--overflow:auto;-->
+          <!--margin-top:30px;-->
+        <!--}-->
+        <!--#table-wrapper table {-->
+          <!--width:100%;-->
+
+        <!--}-->
+        <!--/*#table-wrapper table * {-->
+          <!--background:black;-->
+          <!--color:black;-->
+        <!--}*/-->
+        <!--&lt;!&ndash;#table-wrapper table thead th .text {&ndash;&gt;-->
+          <!--&lt;!&ndash;position:absolute;&ndash;&gt;-->
+          <!--&lt;!&ndash;top:-18px;&ndash;&gt;-->
+          <!--&lt;!&ndash;z-index:3;&ndash;&gt;-->
+          <!--&lt;!&ndash;height:30px;&ndash;&gt;-->
+          <!--&lt;!&ndash;width:20%;&ndash;&gt;-->
+          <!--&lt;!&ndash;border:2px;&ndash;&gt;-->
+          <!--&lt;!&ndash;align-content: center;&ndash;&gt;-->
+          <!--&lt;!&ndash;background:white;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--table thead tr{-->
+            <!--&lt;!&ndash;display:block;&ndash;&gt;-->
+        <!--}-->
+
+        <!--&lt;!&ndash;table th,table td{&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;width:100px;//fixed width&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+        <!--table  tbody{-->
+          <!--&lt;!&ndash;display:block;&ndash;&gt;-->
+          <!--&lt;!&ndash;height:200px;&ndash;&gt;-->
+          <!--overflow:auto;//set tbody to auto-->
+        <!--}-->
+
+        <!--&lt;!&ndash;table thead{&ndash;&gt;-->
+                  <!--&lt;!&ndash;background:#1ABC9C;&ndash;&gt;-->
+                  <!--&lt;!&ndash;color:white;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;#table-1 {&ndash;&gt;-->
+            <!--&lt;!&ndash;position: fixed;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;top: 0px; display:none;&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;background-color:white;&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <!--<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>-->
+      <!--<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>-->
+    <![endif]-->
+  </head>
+
+
+<body>
+    {% block body %}
+
+    <!--<div  class="row" style="text-align:center;">-->
+      <!--<h1><a href="/">Language Exercise</a></h1>-->
+    <!--</div>-->
+    {% block menu %}
+    <div id="menu-div" class="pull-right with-margins">
+
+    </div>
+    <br>
+
+    {% endblock %}
+    <!-- <hr class="no-margins"/> -->
+    <div id="main-div" class="with-margins">
+    {# One-time system messages called Flash messages #}
+    {% block flash_messages %}
+        {%- with messages = get_flashed_messages(with_categories=true) -%}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category=='error' %}
+                        {% set category='danger' %}
+                    {% endif %}
+                    <div class="alert alert-{{category}}">{{ message|safe }}</div>
+                {% endfor %}
+            {% endif %}
+        {%- endwith %}
+    {% endblock %}
+
+    {% block main %}{% block content %}{% endblock %}{% endblock %}
+    </div>
+
+    <br/>
+    <!-- <hr class="no-margins"/> -->
+    <!-- <div id="footer-div" class="clearfix with-margins">
+        <div class="pull-left">devsample v1.0</div>
+        <div class="pull-right">&copy; 2014 MyCorp</div>
+    </div> -->
+    {% endblock %}
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+    <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+  </body>
+</html>

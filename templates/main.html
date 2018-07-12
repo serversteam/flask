@@ -1,0 +1,71 @@
+<head><title>bet dev</title></head>
+{% extends "base.html" %}
+    {% block content %}
+    <form method='post'>
+      <table width="80%"  align="center" bgcolor="white">
+          <tbody>
+          <div style="text-align:center;">
+            <label><h2>Choose a Dictionary  to Practice </h2> </label><br>
+            <tr >
+              <td align = "center">
+              <select name="option" class="selectpicker btn-lg drop">
+                <!-- <option disabled selected value>&nbsp;</option> -->
+              {% for x in lt %}
+              <option value="{{ loop.index }}">{{ x }}</option>
+              {% endfor %}
+              </select>
+              </td>
+            </tr>
+            <tr>
+                <td>&nbsp; </td>
+            </tr>
+
+              <tr colspan= "4">
+            <td align = "center" >
+              <button type="submit" class="btn btn-primary btn-lg" align="center"><strong>Next</strong></button>
+            </td>
+              </tr>
+          </div>
+
+    </form>
+
+    <!-- <form method='post'>
+            <table width="80%" border="5" align="center" bgcolor="white">
+                <tbody>
+
+                        <tr>
+                          <th>
+                            <label>Select a list :</label>
+                              <select name="option" width="400px">
+                              {% for x in lt %}
+                              <option value="{{ x }}" SELECTED>{{ x }}</option>
+                              {% endfor %}
+                              </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan= "4">
+                                    In Loops Of How Many Words?:
+                                    <input type="text" id="number" name="number" value="" width="400px"/>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan= "4">
+                                    <!-- Press 1 for 'A To B' or 2 for 'B To A?: -->
+                                    <!-- <input type="radio" name="fr" value="1"> A To B
+                                    <input type="radio" name="fr" value="2"> B To A<br>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan= "4">
+                                    <!-- Press 1 for 'Practice' or 2 for 'Test': -->
+                                    <!-- <input type="radio" name="test" value="1"> Practice
+                                    <input type="radio" name="test" value="2"> test<br>
+                            </th>
+                        </tr>
+
+                        <th colspan= "4"><button type="submit" ><strong>Submit</strong></button></th>
+
+                    </tbody>
+                </table>
+    </form> -->

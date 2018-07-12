@@ -1,0 +1,11 @@
+Starting Capital,float,y,"Enter any value, for example 1000"
+Direction,string,y,Back or Lay
+OddsType,integer,y,"Enter 1 for Avg, 2 for Max, 3 for Min, 4 for Mid"
+Spread,float,n,"Example: Enter 0.01, the odds used will increase from 1.50 for 1.51"
+Commission on Profit,float,n,Example: Enter 0.05 for 5pct
+Base Bet Type,string,y,Enter F for Fixed Amount or P for Pct of Capital
+Base Bet,float,y,"Example: Enter 2 for a Fixed Amount of 2 Dollars, enter 0.05 for a Pct of Capital of 5pct"
+Multiplier after Winning,float,n,Example: Enter 1.5 if you want to increase your bet by 1.5 times after winning the previous bet
+Multiplier after Losing,float,n,Example: Enter 1.5 if you want to increase your bet by 1.5 times after losing the previous bet
+Maximum Multiple of Base Bet,float,n,"Example: If your base bet is 5 Dollars and you enter 10, your bet will never be bigger than 50"
+What to do if Maximum Multiple is Reached,string,n,Enter R for reset to Base Bet or C to continue using the Maximum Multiplier

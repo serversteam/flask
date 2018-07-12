@@ -1,0 +1,38 @@
+<head><title>bet dev</title></head>
+{% extends "base.html" %}
+    {% block content %}
+   <form method='POST'>
+      <table width="100%"  align="center" >
+          <tbody>
+          <div style="text-align:center;">
+            <!--<label><h2>RESULTS </h2> </label><br>-->
+            <tr >
+              <td >
+                  <table align = "center" class="table table-bordered">
+                      <!-- table header -->
+                      {% if lt %}
+                      <!-- table rows -->
+                      {% for dict_item in lt %}
+                      <tr align = "center">
+
+                         <td align = "left"> {{ dict_item }}</td>
+
+                      </tr>
+                      {% endfor %}
+                       {% endif %}
+                  </table>
+              </td>
+            </tr>
+            <tr>
+                <td>&nbsp; </td>
+            </tr>
+
+              <tr colspan= "100">
+        	<div align="center">
+	            <button href='criteria' class="btn btn-primary btn-lg custom"> RESTART </button>
+	        </div>
+              </tr>
+          </div>
+
+    </form>
+    {% endblock %}

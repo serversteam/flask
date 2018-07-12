@@ -1,0 +1,10 @@
+"Indoors vs Outdoors - Example: type ""indoor""",5,string,leftexact,none,String
+"Player - Example: ""federer"", ""fed"", ""feder""",9,string,leftexact,none,String
+"Type Of Tournament - Example: ""grand slam"", ""grand""",4,string,leftexact,none,String
+"City - Example: ""london"", ""lon"", ""paris"", ""pa""",2,string,exact,none,String
+"Stage - Exaple: ""semifinal"", ""the final""",7,string,leftexact,none,String
+Best Of Sets,8,integer,exact,none,Value
+Player's World Ranking Lower Than,12,integer,lower,none,Value
+Player's World Ranking Higher Than,12,integer,higher,none,Value
+Opponent's World Ranking Lower Than,13,integer,lower,none,Value
+Opponent's World Ranking Higher Than,13,integer,higher,none,Value

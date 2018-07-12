@@ -1,0 +1,38 @@
+<head><title>bet dev</title></head>
+{% extends "base.html" %}
+    {% block content %}
+   <form method='post'>
+      <table width="50%"  align="center" >
+          <tbody>
+          <div style="text-align:center;">
+            <!--<label><h2>Set Filtering Criteria </h2> </label><br>-->
+            <tr >
+              <td >
+                  <table align = "center" class="table table-bordered">
+                      <!-- table header -->
+                      {% if lt %}
+                      <!-- table rows -->
+                      {% for dict_item in lt %}
+                      <tr align = "center">
+
+                         <td align = "right"> {{ dict_item }}: </td>
+                          <td align = "left"><input type="string" name="{{ loop.index }}"><br> </td>
+                      </tr>
+                      {% endfor %}
+                       {% endif %}
+                  </table>
+              </td>
+            </tr>
+            <tr>
+                <td>&nbsp; </td>
+            </tr>
+
+              <tr colspan= "100">
+        	<div align="center">
+	            <button class="btn btn-primary btn-lg custom"> Filter Data</button>
+	        </div>
+              </tr>
+          </div>
+
+    </form>
+    {% endblock %}
